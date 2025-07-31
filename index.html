@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html lang="zh">
 
-
 <head>
     <meta charset="UTF-8">
     <title>健身資訊網</title>
-
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-
-            text-align: center;
-            background-color: oklab(97.552% -0.00086 0.00653);
-        }
-
         .sub-title {
             background-color: aqua;
             color: rgb(17, 17, 100);
         }
+
+        /* . -> class */
+        .content {
+            background-color: rgb(241, 167, 114);
+            padding: 48px 24px;
+        }
+
+        /* # -> id */
+        #image {
+            border: 2px black solid;
+            background-color: rgb(253, 253, 253);
+
+        }
+
+        #image img {
+            margin: 12px;
+            width: 28%;
+            border-radius: 12px;
+        }
+
+        #bmiTable {
+            width: 60%;
+            height: 400px;
+            margin: 12px auto;
+        }
+
+        #bmiTable th {
+            background-color: chartreuse;
+        }
+
+        #bmiTable td {
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+        }
+
+        #bmiTable td:first-child {
+            background-color: rgb(89, 9, 236);
+        }
+
+        h2 {
+            display: inline-block;
+            width: 400px;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid darkblue;
+        }
     </style>
-
-
 </head>
 
 <body>
-    <!--內容區-->>
-    <h1 style="background-color: chocolate;color:white">何謂健身?</h1>
+    <!-- 內容區 -->
+    <div style="text-align: left;">
+        <h1 style="display: inline-block; font-size: 48px;">何謂健身?</h1>
+    </div>
     <img width="100%" src="https://img.88icon.com/download/jpg/201911/3ec29f60ce18f9017a72a867455aa606.jpg!con" alt="">
-    <h3>
-        健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，<br>
-        <br>以及提高協調和控制身體各部分的能力來使我們的身體更強健。
-    </h3>
-    <p>
-        <em>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，<br>
-            以及讓我們的肌肉更加的結實。
-            如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，<br>他們是如何做到年過50/60歲，依舊在
-            舞臺上或者是電影螢幕上綻放光彩。</em>
-        <b>
-            <u>答案就是堅持運動健身!</u>
-        </b>
-    </p>
-    <br>
+
+    <div class="content">
+        <h3>
+            健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，<br>通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，
+            <br>以及提高協調和控制身體各部分的能力來使我們的身體更強健。
+        </h3>
+        <p>
+            <em>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，<br>
+                以及讓我們的肌肉更加的結實。
+                如果你對健身仍然保持著懷疑的態度，那你大可以去看看你喜歡的健身老戲骨幹，<br>他們是如何做到年過50/60歲，依舊在
+                舞臺上或者是電影螢幕上綻放光彩。</em>
+            <b>
+                <u>答案就是堅持運動健身!</u>
+            </b>
+        </p>
+    </div>
+
+    <hr>
     <h2 class="sub-title">健身的10個好處</h2>
     <ol type="1" style="text-align: left;">
         <li>增加基礎代謝率</li>
@@ -55,28 +99,28 @@
     </ol>
     <hr>
     <h2 class="sub-title">好文章連結</h2>
-    <li>
-
-        <a target="_blank"
-            href="https://www.wondercore.hk/blog/posts/%E5%A0%85%E6%8C%81%E5%81%A5%E8%BA%AB%E6%9C%89%E4%BB%80%E9%BA%BC%E5%A5%BD%E8%99%95%EF%BC%8C%E7%82%BA%E4%BB%80%E9%BA%BC%E5%81%A5%E8%BA%AB%E6%9C%83%E8%AE%93%E4%BA%BA%E4%B8%8A%E7%99%AE%EF%BC%9F">
-            健身初學者必看！10個常見的健身迷思
-        </a>
-    </li>
-    <li>
-        <a
-            href="https://www.pressplay.cc/project/9D0FF8157357C72F07FB876D1474DA17/articles/473686A86F36C0EA9760CC5D977D237A?srsltid=AfmBOor0ufSO_Hl06fbY2gVTl06YCrYB_oV2WH7-fQrPEAmQvpfj7860">
-            動起來就是最好良藥！如何不知不覺養成「動習慣」
-        </a>
-    </li>
-    <li>
-        <a
-            href="https://www.pressplay.cc/project/7D7E16FBCDC2A45E9B1F88BBDEC7304A/articles/C47C7A31DC85C60698D288930238628D?srsltid=AfmBOopxTSo1xbNcPKZ_ONvnls9s4VOLXmtKsrl5gvrMIfLgyAM0hTre">
-            飲食調整：讓自己不再心酸的關鍵因素
-        </a>
-    </li>
+    <div class="content" style="background-color: aquamarine;font-size: 24px;">
+        <li>
+            <a target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6">
+                健身初學者必看！10個常見的健身迷思
+            </a>
+        </li>
+        <li>
+            <a
+                href="https://www.pressplay.cc/project/9D0FF8157357C72F07FB876D1474DA17/articles/473686A86F36C0EA9760CC5D977D237A">
+                動起來就是最好良藥！如何不知不覺養成「動習慣」
+            </a>
+        </li>
+        <li>
+            <a
+                href="https://www.pressplay.cc/project/7D7E16FBCDC2A45E9B1F88BBDEC7304A/articles/C47C7A31DC85C60698D288930238628D">
+                飲食調整：讓自己不再練心酸的關鍵因素
+            </a>
+        </li>
+    </div>
     <hr>
     <h2 class="sub-title">一天所需卡路里</h2>
-    <table border="1">
+    <table border="1" id="bmiTable">
         <thead>
             <tr>
                 <th>每天活動量</th>
@@ -106,46 +150,52 @@
             </tr>
         </tbody>
     </table>
-    <b>
-        <a href="bmi.html">計算BMI:</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;</b>
-    一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
-    <b>計算所需熱量:&copy;♦</b>
-    因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+    <div style="text-align: left;margin-left: 24px;">
+        <b>
+            <a href="bmi.html">計算BMI:</a></b>
+        一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
+        計算所需熱量:&copy;
+        因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
+    </div>
     <hr>
     <h2 class="sub-title">健身照片</h2>
-    <img width="31%" src="img/pic-1.jpg" alt="圖片消失">
-    <img width="31%" src="img/pic-2.jpg" alt="">
-    <img width="31%" src="img/pic-3.jpg" alt="">
 
+    <div id="image">
+        <img src="img/pic-1.jpg" alt="圖片消失">
+        <img src="img/pic-2.jpg" alt="">
+        <img src="img/pic-3.jpg" alt="">
+    </div>
     <hr>
     <h2 class="sub-title">健身影片</h2>
-    <iframe width="45%" height="385" src="https://www.youtube.com/embed/tZa7NaxBzU8"
-        title="運動後亂吃不會胖？健身飲食迷思破解，營養師建議的黃金進食時間點｜新手健身飲食" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
-    <iframe width="45%" height="385" src="https://www.youtube.com/embed/7iC8LaBuU1E"
-        title="【中階】10分鐘高強度居家運動 - 燃燒脂肪 有氧+無氧/ 10 mins intense HIIT workout at home - full body workout" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <video width="91%" controls src=" video/file_example_MP4_480_1_5MG.mp4 "></video>
+    <div>
+        <iframe width="45%" height="385" src="https://www.youtube.com/embed/XSdYrETWt20"
+            title="25分鐘 站立核心運動｜新手+無彈跳｜暖身+伸展｜腹部線條雕塑" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="45%" height="385" src="https://www.youtube.com/embed/LmrKejHOaG4"
+            title="男女適用!! 20分鐘 站立式全身燃脂運動、不跳躍、不傷膝、簡單有效" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <!-- <video width="91%" controls src="video/file_example_MP4_640_3MG.mp4"></video> -->
     <hr>
     <h2 class="sub-title">表單</h2>
     <h3>需要更多資訊?免費索取健身資訊</h3>
     <p>前100名還贈送［我愛健身］書籍一本!</p>
+
 
     <form action="">
         <input type="checkbox" name="age">18歲
 
         <select name="county" id="">
             <option value="台北市">台北市</option>
-            <option value="台北市">新北市</option>
-            <option value="台北市">桃園市</option>
+            <option value="新北市">新北市</option>
+            <option value="桃園市">桃園市</option>
         </select>
 
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" placeholder="sayingsandy@gmail.com">
-        <p>您的寶貴意見：</p>
+        <label for="email"> Email:</label>
+        <input type="text" name="email" id="email" placeholder="test@gmail.com">
+        <p>您的寶貴意見:</p>
         <textarea id="comment" name="comment" cols="30" rows="20"></textarea>
         <br>
         <button type="submit">送出</button>

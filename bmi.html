@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI計算機</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        form {
+            width: 60%;
+            height: 150px;
+            /* margin: 12px; */
+        }
+
+        @media screen and (max-width:1024px) {
+            form {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            form {
+                width: 100%;
+                /* margin: 0px; */
+            }
+
+        }
+    </style>
 </head>
 
 <body>
+    <h1>BMI計算機</h1>
     <form action="">
         <label for="name">姓名</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" placeholder="請輸入姓名">
         <br>
         <label for="height">身高</label>
         <input type="number" name="height" id="height" step="0.1" required>
         <br>
         <label for="weight">體重</label>
-        <!-- requird 必需 -->
+        <!-- required 必需 -->
         <input type="number" name="weight" id="weight" step="0.1" required>
         <p>
+            <button type="submit">計算</button>
+        </p>
     </form>
 
     <a href="index.html">回首頁</a>
