@@ -45,22 +45,31 @@
         <!-- required 必需 -->
         <input type="number" name="weight" id="weight" step="0.1" placeholder="88.8" required>
         <p>
-            <button type="submit" onclick="calc()">計算</button>
+            <button type="button" onclick="calc()">計算</button>
         </p>
     </form>
 
     <a href="index.html">回首頁</a>
+
+    <div id="result"></div>
+
     <script>
+        const resultE1 = document.querySelector("#result");
+        console.log(resultE1);
+
+
+
         function calc() {
             //取得元件 ppt for document 取值
             const heightEl = document.querySelector("#height");
             const weightEl = document.querySelector("#weight");
+            const nameE1 = document.querySelector("#name");
 
-            console.log(heightEl, weightEl);
+            console.log(nameE1, heightEl, weightEl);
 
+            let name = nameE1.value;
             let height = heightEl.value;
             let weight = weightEl.value;
-
             console.log(height, weight);
 
             // 外部輸入
@@ -70,8 +79,11 @@
             let bmi = getBMI(height, weight);
             let comment = getComment(bmi);
             // 輸出優化
-            document.write(`<h2>身高:${height}<br>體重:${weight}<br>BMI:${bmi.toFixed(2)}</h2>`);
-            document.write(`<h1 style="color:blue">${comment}</h1>`)
+            resultE1.innerHTML = `<h1>BMI:${bmi.toFixed(2)}</h1>`;
+
+            resultE1.innerHTML = `<h1 style="color:blue">${name} - ${comment}</h1>`;
+            //document.write(`<h2>身高:${height}<br>體重:${weight}<br>BMI:${bmi.toFixed(2)}</h2>`);
+            //document.write(`<h1 style="color:blue">${comment}</h1>`)
         }
 
 
